@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       resources :logins
 
       get '/users',to: 'users#getUser'
+      post '/createUser',to: 'users#createUser'
     end
   end
   

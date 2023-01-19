@@ -5,6 +5,8 @@ class Api::V1::LoginsController < ApplicationController
   def index
     @logins = Login.all
 
+    p "@logins",@logins
+
     render json: @logins
   end
 
